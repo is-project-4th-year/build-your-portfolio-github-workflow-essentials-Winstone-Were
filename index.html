@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amaumo Winstone Were – Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/resume.png" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Amaumo Winstone Were – Portfolio showcasing projects in IoT, Web, and Mobile Development." />
+    <meta name="keywords"
+        content="Amaumo Winstone Were, Portfolio, Developer, IoT, React Native, Jetpack Compose, Node.js, Web Developer, Mobile Developer, Kenyan Developer" />
+    <meta name="author" content="Amaumo Winstone Were" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Amaumo Winstone Were – Portfolio" />
+    <meta property="og:description"
+        content="Explore the portfolio of Amaumo Winstone Were, innovating at the intersection of IoT, Web, and Mobile Development." />
+    <meta property="og:image" content="https://winstone-were.github.io/portofolio-winstone-were/assets/resume.png" />
+    <meta property="og:url" content="https://winstone-were.github.io/portofolio-winstone-were/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Amaumo Winstone Were – Portfolio" />
+    <meta name="twitter:description"
+        content="Kenyan developer working with IoT, Web, and Mobile tech. Explore my latest projects and skills." />
+    <meta name="twitter:image" content="https://winstone-were.github.io/portofolio-winstone-were/assets/resume.png" />
+
+    <!-- Scripts & Styles -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body class="bg-black text-white">
+    <nav class="fixed top-0 w-full z-50 py-4 navbar-glass shadow-lg bg-black/60 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+            <a href="#hero" class="text-white font-bold text-xl">Winstone Were</a>
+
+            <!-- Mobile toggle button -->
+            <button id="menuToggle" class="text-white md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div id="menu"
+                class="hidden md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-black/90 md:bg-transparent backdrop-blur-md md:backdrop-blur-none shadow-lg md:shadow-none space-y-2 md:space-y-0 md:space-x-8 px-6 md:px-0 py-4 md:py-0 z-40">
+                <a href="#about" data-section="about"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    About
+                </a>
+                <a href="#experience" data-section="experience"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Experience
+                </a>
+                <a href="#education" data-section="education"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Education
+                </a>
+                <a href="#projects" data-section="projects"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Projects
+                </a>
+                <a href="#certifications" data-section="certifications"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Certifications
+                </a>
+                <a href="#skills" data-section="skills"
+                    class="nav-link block text-white hover:text-blue-400 transition duration-300 px-4 py-3 rounded-md w-full md:w-auto text-center md:text-left">
+                    Skills
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="fixed top-0 left-0 w-full h-full -z-20 bg-cover bg-center"
+        style="background-image: url('./assets/gaminglaptop.jpg'); filter: brightness(20%);">
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <section id="hero" class="hero-section relative overflow-hidden" data-aos="fade-in">
+            <!-- Background Image Layer -->
+            <!-- Animated SVG Background -->
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+            </svg>
+
+            <!-- Parallax Background Elements -->
+            <div class="section-background-elements">
+                <div class="shape shape-large rellax" data-rellax-speed="-3" style="top: 10%; left: 10%;"></div>
+                <div class="shape shape-medium rellax" data-rellax-speed="2" style="bottom: 20%; right: 15%;"></div>
+                <div class="shape shape-small rellax" data-rellax-speed="-1" style="top: 40%; right: 5%;"></div>
+                <div class="shape shape-large rellax" data-rellax-speed="1" style="bottom: 5%; left: 5%;"></div>
+            </div>
+
+            <!-- Hero Text Content -->
+            <div class="section-content hero-text-container">
+                <h1 class="text-6xl md:text-7xl font-extrabold uppercase tracking-tight text-blue-400 mb-6 leading-tight rellax"
+                    data-rellax-speed="2">
+                    Amaumo Winstone Were
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-200 mb-8 max-w-3xl mx-auto rellax" data-rellax-speed="1.5">
+                    Innovating at the intersection of <strong>IoT, Web, and Mobile Development</strong>. Crafting robust
+                    and
+                    intelligent solutions with a passion for cutting-edge technology.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-xl mb-12 rellax" data-rellax-speed="1">
+                    <a href="mailto:stoniedev@gmail.com"
+                        class="flex items-center text-white hover:text-blue-400 transition duration-300">
+                        <i data-lucide="mail" class="w-6 h-6 mr-2"></i> stoniedev@gmail.com
+                    </a>
+                    <a href="tel:+254729291438"
+                        class="flex items-center text-white hover:text-blue-400 transition duration-300">
+                        <i data-lucide="phone" class="w-6 h-6 mr-2"></i> +254729291438
+                    </a>
+                    <a href="#" class="flex items-center text-white hover:text-blue-400 transition duration-300"
+                        target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="linkedin" class="w-6 h-6 mr-2"></i> LinkedIn
+                    </a>
+                    <a href="#" class="flex items-center text-white hover:text-blue-400 transition duration-300"
+                        target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github" class="w-6 h-6 mr-2"></i> GitHub
+                    </a>
+                </div>
+                <a href="#experience"
+                    class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg rellax"
+                    data-rellax-speed="0.5">
+                    Explore My Work <i data-lucide="arrow-down" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="about" class="w-fulltext-white py-24 px-6 relative overflow-hidden">
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+            </svg>
+            <!-- Main Content -->
+            <div class="relative z-10 text-center px-6 md:px-20 lg:px-32">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-6 uppercase tracking-tight">About Me</h2>
+
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-4xl mx-auto">
+                    I'm passionate about building <strong>real-world solutions</strong> that make technology more
+                    useful,
+                    accessible, and human. Whether I'm coding up IoT firmware, designing sleek mobile apps, or solving
+                    performance bottlenecks — I thrive at the intersection of <strong>creativity and logic</strong>.
+                </p>
+
+                <p class="text-lg text-gray-400 leading-relaxed mb-12 max-w-3xl mx-auto">
+                    I value <em>clean code</em>, <em>curiosity</em>, and <em>collaboration</em>. Beyond the keyboard, I
+                    enjoy
+                    deep dives into hardware, reverse engineering fun problems, and sometimes sketching out product
+                    ideas
+                    over a strong cup of Kenyan coffee ☕.
+                </p>
+
+                <!-- Fun Skill Highlights -->
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-400 max-w-4xl mx-auto">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="settings" class="w-5 h-5 text-blue-400"></i> Problem Solver
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="zap" class="w-5 h-5 text-blue-400"></i> Fast Learner
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="handshake" class="w-5 h-5 text-blue-400"></i> Collaborative
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="code-2" class="w-5 h-5 text-blue-400"></i> Clean Coder
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="coffee" class="w-5 h-5 text-blue-400"></i> Coffee Thinker
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="rocket" class="w-5 h-5 text-blue-400"></i> Tech Explorer
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="box-select" class="w-5 h-5 text-blue-400"></i> UI/UX Curator
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-5 h-5 text-blue-400"></i> Lifelong Learner
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="text-white py-24 px-6 md:px-20 w-full lg:px-32 relative overflow-hidden">
+            <!-- Animated SVG Background -->
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="9000" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+            </svg>
+
+            <div class="max-w-6xl mx-auto text-center relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-12 uppercase tracking-tight">Experience</h2>
+
+                <div class="space-y-10 text-left">
+                    <!-- iLabAfrica -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow hover:shadow-blue-500/20 transition">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="cpu" class="w-6 h-6 text-purple-400"></i>
+                            <h3 class="text-xl font-semibold">IoT Intern – @iLabAfrica</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-2">Jan 25 – Apr 30</p>
+                        <ul class="text-gray-400 list-disc list-inside space-y-1">
+                            <li>Developed IoT solutions for industry partners, focused on real-world applications.</li>
+                            <li>Built and tested sensor-based systems for data collection and monitoring.</li>
+                            <li>Collaborated on smart system prototypes integrating hardware and cloud platforms.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Bluewave -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow hover:shadow-purple-500/20 transition">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="code" class="w-6 h-6 text-blue-400"></i>
+                            <h3 class="text-xl font-semibold">React Developer – Bluewave Insurance Agency</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-2">Mar 24 – Apr 24</p>
+                        <ul class="text-gray-400 list-disc list-inside space-y-1">
+                            <li>Designed and integrated RESTful APIs for third-party services.</li>
+                            <li>Built interactive dashboards for real-time analytics and insights.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Render Health -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow hover:shadow-blue-500/20 transition">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="smartphone" class="w-6 h-6 text-purple-400"></i>
+                            <h3 class="text-xl font-semibold">React Native Developer – Render Health Technology</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-2">Jan 23 – Jul 23</p>
+                        <ul class="text-gray-400 list-disc list-inside space-y-1">
+                            <li>Developed a cross-platform health loans app for iOS and Android.</li>
+                            <li>Designed accessible UI for easier loan applications and tracking.</li>
+                            <li>Implemented push notifications for real-time updates.</li>
+                            <li>Optimized performance, cutting loading time by 15%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="text-white py-24 px-6 md:px-20 lg:px-32 relative overflow-hidden">
+
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+            </svg>
+
+            <div class="max-w-6xl mx-auto text-center relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-12 uppercase tracking-tight">Education</h2>
+
+                <div class="space-y-10 text-left">
+                    <!-- Strathmore -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow hover:shadow-purple-500/20 transition">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-400"></i>
+                            <h3 class="text-xl font-semibold">Strathmore University – Nairobi, Kenya</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-2">Jul 22 – Jul 26 · BSc Informatics & Computer Science</p>
+                        <ul class="text-gray-400 list-disc list-inside space-y-1">
+                            <li>Current Mean: A</li>
+                            <li>Certificate of Excellence (Aug 2023)</li>
+                            <li>Certificate of Merit (Aug 2024)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Utumishi -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow hover:shadow-blue-500/20 transition">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="school" class="w-6 h-6 text-purple-400"></i>
+                            <h3 class="text-xl font-semibold">Utumishi Academy – Nakuru, Kenya</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-2">Jan 18 – Apr 22 · KCSE</p>
+                        <p class="text-gray-400">Mean Grade: A-</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="text-white py-24 px-6 md:px-20 lg:px-32 relative overflow-hidden">
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+            </svg>
+            <div class="relative z-10 max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-12 uppercase tracking-tight">Projects</h2>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Project Card -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-blue-500/20 transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Turf Finder App</h3>
+                        <p class="text-gray-400 mb-4">Built with Jetpack Compose for Android, this app helps users
+                            locate and post available sports turfs in Kenya.</p>
+                        <div class="flex gap-4 text-blue-400 text-sm">
+                            <i data-lucide="smartphone" class="w-5 h-5"></i> Jetpack Compose
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-blue-500/20 transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-2">CHIP-8 Emulator</h3>
+                        <p class="text-gray-400 mb-4">Developed a full CHIP-8 emulator in C++ using CMake, supporting
+                            all original ROMs and cross-platform builds.</p>
+                        <div class="flex gap-4 text-blue-400 text-sm">
+                            <i data-lucide="terminal-square" class="w-5 h-5"></i> C++ / CMake
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-blue-500/20 transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Drug Dispensary API</h3>
+                        <p class="text-gray-400 mb-4">Node.js REST API with JWT auth for prescription management in
+                            health facilities.</p>
+                        <div class="flex gap-4 text-blue-400 text-sm">
+                            <i data-lucide="server" class="w-5 h-5"></i> Node.js, JWT, Express
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-blue-500/20 transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Live Chat App</h3>
+                        <p class="text-gray-400 mb-4">Real-time chat app built using React and Firebase with OAuth
+                            integration for authentication.</p>
+                        <div class="flex gap-4 text-blue-400 text-sm">
+                            <i data-lucide="message-square" class="w-5 h-5"></i> React, Firebase, OAuth
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-blue-500/20 transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-2">WebSocket Engine</h3>
+                        <p class="text-gray-400 mb-4">Built a Node.js-based WebSocket engine enabling real-time P2P and
+                            broadcast messaging.</p>
+                        <div class="flex gap-4 text-blue-400 text-sm">
+                            <i data-lucide="broadcast" class="w-5 h-5"></i> Node.js, WebSocket
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-blue-500/20 transition duration-300">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Vim-style Text Editor</h3>
+                        <p class="text-gray-400 mb-4">Created a terminal-based text editor in C with features like save,
+                            edit, and navigation.</p>
+                        <div class="flex gap-4 text-blue-400 text-sm">
+                            <i data-lucide="file-text" class="w-5 h-5"></i> C, ncurses
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="text-white py-24 px-6 md:px-20 lg:px-32 relative overflow-hidden">
+
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+
+            </svg>
+            <div class="max-w-6xl mx-auto relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-12 text-center uppercase tracking-tight">
+                    Certifications</h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- FreeCodeCamp -->
+                    <div class="bg-gray-900 p-6 rounded-xl shadow hover:shadow-purple-500/20">
+                        <h3 class="text-xl font-semibold mb-2"><i data-lucide="award"
+                                class="inline-block w-5 h-5 text-purple-400 mr-2"></i>FreeCodeCamp</h3>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>Data Visualization with D3 – Feb 2025</li>
+                            <li>Data Analysis with Python – Oct 2024</li>
+                            <li>Machine Learning with Python – Oct 2024</li>
+                            <li>Foundational C# with Microsoft – Sep 2024</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cisco -->
+                    <div class="bg-gray-900 p-6 rounded-xl shadow hover:shadow-blue-500/20">
+                        <h3 class="text-xl font-semibold mb-2"><i data-lucide="network"
+                                class="inline-block w-5 h-5 text-blue-400 mr-2"></i>Cisco</h3>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>CCNA: Switching, Routing, Wireless – Dec 2023</li>
+                            <li>IT Essentials – Dec 2022</li>
+                            <li>CCNA: Intro to Networks – Mar 2022</li>
+                        </ul>
+                    </div>
+
+                    <!-- SoloLearn -->
+                    <div class="bg-gray-900 p-6 rounded-xl shadow hover:shadow-purple-500/20">
+                        <h3 class="text-xl font-semibold mb-2"><i data-lucide="book-open-check"
+                                class="inline-block w-5 h-5 text-purple-400 mr-2"></i>Sololearn</h3>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>JavaScript – DOM, Web Services API</li>
+                            <li>Java – OOP, Abstraction, Inheritance</li>
+                            <li>Python Core – Django, Tkinter</li>
+                            <li>jQuery – jQuery UI, Mobile</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="text-white py-24 px-6 md:px-20 lg:px-32 relative overflow-hidden">
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+            </svg>
+            <div class="max-w-6xl mx-auto relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-12 text-center uppercase tracking-tight">
+                    Skills</h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-sm text-gray-300">
+                    <div class="bg-gray-900 p-5 rounded-lg shadow hover:shadow-purple-500/20">
+                        <h3 class="text-lg font-semibold mb-2 text-purple-400 flex items-center"><i data-lucide="code"
+                                class="w-4 h-4 mr-2"></i>Programming Languages</h3>
+                        <ul class="list-disc list-inside">
+                            <li>C++, C, Golang, JavaScript</li>
+                            <li>Python, C#</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-5 rounded-lg shadow hover:shadow-blue-500/20">
+                        <h3 class="text-lg font-semibold mb-2 text-blue-400 flex items-center"><i data-lucide="globe"
+                                class="w-4 h-4 mr-2"></i>Web Development</h3>
+                        <ul class="list-disc list-inside">
+                            <li>React.js, Node.js, Express, Gin (.go)</li>
+                            <li>.NET, WebSockets, REST APIs</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-5 rounded-lg shadow hover:shadow-purple-500/20">
+                        <h3 class="text-lg font-semibold mb-2 text-purple-400 flex items-center"><i
+                                data-lucide="smartphone" class="w-4 h-4 mr-2"></i>Mobile & Desktop</h3>
+                        <ul class="list-disc list-inside">
+                            <li>React Native, Jetpack Compose</li>
+                            <li>CMake, Cross-platform builds</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-5 rounded-lg shadow hover:shadow-blue-500/20">
+                        <h3 class="text-lg font-semibold mb-2 text-blue-400 flex items-center"><i data-lucide="brain"
+                                class="w-4 h-4 mr-2"></i>ML & Data Analysis</h3>
+                        <ul class="list-disc list-inside">
+                            <li>TensorFlow, Scikit-learn, Pandas</li>
+                            <li>SQL, Matplotlib, Seaborn</li>
+                            <li>Predictive Modeling, Clustering</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-5 rounded-lg shadow hover:shadow-purple-500/20">
+                        <h3 class="text-lg font-semibold mb-2 text-purple-400 flex items-center"><i data-lucide="cpu"
+                                class="w-4 h-4 mr-2"></i>IoT & Embedded</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Arduino, ESP32, Raspberry Pi</li>
+                            <li>Espressif Platform</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-5 rounded-lg shadow hover:shadow-blue-500/20">
+                        <h3 class="text-lg font-semibold mb-2 text-blue-400 flex items-center"><i data-lucide="database"
+                                class="w-4 h-4 mr-2"></i>Tools & Soft Skills</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Git, Docker, JWT, Firebase</li>
+                            <li>Team Collaboration, Time Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-white py-24 px-6 md:px-20 lg:px-32 relative overflow-hidden">
+            <svg class="animated-bg fixed inset-0 w-full h-full -z-10 object-cover" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 800" preserveAspectRatio="none">
+                <rect id="sq10" x="900" y="200" width="35" height="35" />
+                <rect id="sq11" x="1000" y="120" width="50" height="50" />
+                <rect id="sq12" x="1100" y="300" width="40" height="40" />
+                <rect id="sq1" x="20" y="50" width="40" height="40" />
+                <rect id="sq2" x="100" y="200" width="30" height="30" />
+                <rect id="sq3" x="200" y="100" width="50" height="50" />
+                <rect id="sq4" x="300" y="250" width="35" height="35" />
+                <rect id="sq5" x="400" y="70" width="60" height="60" />
+                <rect id="sq6" x="500" y="150" width="45" height="45" />
+                <rect id="sq13" x="50" y="400" width="30" height="30" />
+                <rect id="sq14" x="150" y="500" width="60" height="60" />
+                <rect id="sq15" x="250" y="450" width="45" height="45" />
+                <rect id="sq16" x="350" y="550" width="35" height="35" />
+                <rect id="sq17" x="450" y="380" width="50" height="50" />
+                <rect id="sq18" x="550" y="480" width="40" height="40" />
+                <rect id="sq19" x="650" y="400" width="30" height="30" />
+                <rect id="sq20" x="750" y="520" width="60" height="60" />
+                <rect id="sq21" x="850" y="430" width="45" height="45" />
+                <rect id="sq22" x="950" y="600" width="35" height="35" />
+                <rect id="sq23" x="1050" y="500" width="50" height="50" />
+                <rect id="sq24" x="1150" y="650" width="40" height="40" />
+                <rect id="sq7" x="600" y="220" width="30" height="30" />
+                <rect id="sq8" x="700" y="300" width="40" height="40" />
+                <rect id="sq9" x="800" y="80" width="55" height="55" />
+            </svg>
+            <div class="relative z-10 max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-400 mb-8 uppercase tracking-tight">Contact Me</h2>
+                <p class="text-lg text-gray-300 mb-10">Have a question, opportunity, or just want to connect? Drop a
+                    message below!</p>
+
+                <form class="space-y-6 text-left">
+                    <div>
+                        <label class="block text-gray-400 mb-2" for="name">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 mb-2" for="email">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-gray-400 mb-2" for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Let's build something..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-lg font-semibold shadow-lg text-white">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Global Glowing Backgrounds -->
+        <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+            <div
+                class="absolute w-[50rem] h-[50rem] bg-purple-600 opacity-20 rounded-full blur-[180px] top-[-10%] left-[-10%]">
+            </div>
+            <div
+                class="absolute w-[50rem] h-[50rem] bg-blue-600 opacity-20 rounded-full blur-[180px] bottom-[-10%] right-[-10%]">
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="script.js"></script>
+        <script>
+            lucide.createIcons();
+            const toggle = document.getElementById("menuToggle");
+            const menu = document.getElementById("menu");
+
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+
+            AOS.init({
+                duration: 1000,
+                once: true,
+                delay: 100,
+            });
+            lucide.createIcons();
+
+            // Initialize Rellax for all elements with the 'rellax' class
+            if (window.innerWidth > 768) {
+                new Rellax('.rellax', {
+                    speed: -2,
+                    center: true,
+                    round: true,
+                    vertical: true,
+                    horizontal: false
+                });
+            }
+
+            const squareIDs = ["sq1", "sq2", "sq3", "sq4", "sq5", "sq6", "sq7", "sq8", "sq9", "sq10", "sq11", "sq12", "sq13", "sq14", "sq15", "sq16", "sq17", "sq18", "sq19", "sq20", "sq21", "sq22", "sq23", "sq24"];
+
+            squareIDs.forEach((id, index) => {
+                anime({
+                    targets: `#${id}`,
+                    translateY: [
+                        { value: -20, duration: 2000 },
+                        { value: 20, duration: 2000 }
+                    ],
+                    easing: "easeInOutSine",
+                    direction: "alternate",
+                    loop: true,
+                    delay: index * 200
+                });
+            });
+            // Navbar active link logic
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-link');
+            const nav = document.querySelector('nav'); // Get the navbar element once
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const scrollY = window.pageYOffset;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - nav.offsetHeight - 50; // Adjust for navbar height and a small buffer
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        current = sectionId;
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Initial check for active link on page load
+            window.dispatchEvent(new Event('scroll'));
+        </script>
+    </main>
+</body>
+
+</html>

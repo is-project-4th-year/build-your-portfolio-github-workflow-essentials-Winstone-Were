@@ -2,67 +2,105 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Amaumo Winstone Were  
+- **Admission Number**: 150797  
+- **GitHub Username**: Winstone-Were 
+- **Email**: winstone.amaumo@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+  [https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-Winstone-Were/](https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-Winstone-Were/)
 
 ## 3. Learnings from the Git Crash Program
 
-**What I Thought I'd Learn vs What I Actually Learned**
+### Concept: Branching & Workflow
 
-Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
-For each one, tell us:
+**Expectation 👀**: I thought branches were just for fixing bugs and advanced collaboration.
 
-What you thought it would be like `(Expectation 👀)`
+**Reality 😅**: Turns out, branches are super useful even when working alone! I used them to work on separate sections of my portfolio (like About, Projects, etc.) without breaking the main site.
 
-What you actually learned `(Reality 😅)`
+**Impact 💡**: Helped me test changes safely before merging them to the main portfolio site.
 
-And how it helped with your personal portfolio project 💻
+---
 
-**Example format:**
+### Concept: GitHub Projects
 
-`Concept: GitHub Project Boards`
+**Expectation 👀**: Thought it was a tool mostly used by companies or big dev teams.
 
-`Expectation 👀`: Looked like a complicated tool only teams use.
+**Reality 😅**: It’s actually just a handy visual board – like Trello – built right into GitHub!
 
-`Reality 😅`: It’s actually a visual to-do list! Dragging my tasks from “To do” to “Done” felt so satisfying.
+**Impact 💡**: Gave me clarity while working on my site. I could drag tasks from “To do” to “Done”, and that really helped track progress across multiple portfolio sections.
 
-`Impact 💡`: Helped me stay organized and track my progress on the portfolio, especially when I had lots of sections to build.
+---
 
+### Concept: Pull Requests
+
+**Expectation 👀**: Pull requests looked like a process for code reviews between developers.
+
+**Reality 😅**: Even as a solo dev, they were useful for reviewing my own changes before merging!
+
+**Impact 💡**: Using PRs helped me catch small errors (like typos or broken styles) before merging into the live site.
+
+---
+
+### Concept: Merge Conflict Resolution
+
+**Expectation 👀**: I was scared of merge conflicts – thought they’d be too technical and confusing.
+
+**Reality 😅**: It was just about reading and choosing which code to keep. GitHub even showed helpful highlights.
+
+**Impact 💡**: I confidently handled a conflict when I accidentally edited the same section on two branches. Learned to solve it and keep my portfolio bug-free.
+
+---
 
 ## 4. Screenshots of Key GitHub Features
 
-Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
-
-> Upload the screenshots to your GitHub repository and reference them here using Markdown image syntax:
-> (you could just simply copy and paste the image into the Assignment.md)
-
-```markdown
-![Caption](path/to/your/image.png)
-```
-
 ### A. Milestones and Issues
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+- This screenshot shows how I grouped related tasks using milestones and tracked bugs or feature requests with issues.
+
+![Milestones and Issues](images/milestone_issues.png)
+
+![Milestones List](images/milestones.png)
+
+![Closed Issues](images/closed_issues.png)
+
+---
 
 ### B. Project Board
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+- My GitHub Project Board helped me track my tasks visually. It shows items categorized into "To do", "In progress", and "Done".
+
+![Progress Dashboard](images/progress_dashboard.png)
+
+![Creating Issues in Project](images/creating_issues_in_project.png)
+
+---
 
 ### C. Branching
 
-- Screenshot showing your branch list with meaningful naming.
+- I used meaningful branch names like `about-section-pr` to manage changes per section of the site.
+
+![Branches](images/branches.png)
+
+![Creating Branch from Issue](images/creating_branch_from_issue.png)
+
+---
 
 ### D. Pull Requests
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+- This shows my pull request for the About section. It was linked to its issue and reviewed before merging.
+
+![Pull Requests](images/pull_requests.png)
+
+---
 
 ### E. Merge Conflict Resolution
 
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+- At one point, two branches conflicted. Here's how I resolved the merge conflict through GitHub’s UI.
+
+![Resolving Merge Conflicts](images/resolving_merge_conflicts.png)
+
+---
+

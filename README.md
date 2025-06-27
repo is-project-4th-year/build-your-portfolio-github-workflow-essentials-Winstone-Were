@@ -94,6 +94,3 @@ Before submitting your project, ensure the following:
 - [ ] Demonstrated conflict resolution (Simulate atleast one)
 - [ ] Deployed the portfolio online
 - [ ] Completed and updated the `Assignment.md` file which will be marked and graded
-
-
-
