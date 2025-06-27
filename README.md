@@ -1,65 +1,70 @@
-# 🧠 Amaumo Winstone Were – Portfolio
+lucide.createIcons();
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
 
-Welcome to the source code for my personal portfolio – a digital showcase of my work, skills, and journey through software development. Whether you're here to peek at my projects, learn what tech I'm into, or just curious about the person behind the code, you're in the right place.
+toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+});
 
-🌐 **Live Site**: [winstone-were.github.io/portofolio-winstone-were](https://winstone-were.github.io/portofolio-winstone-were)
+AOS.init({
+    duration: 1000,
+    once: true,
+    delay: 100,
+});
+lucide.createIcons();
 
----
+// Initialize Rellax for all elements with the 'rellax' class
+if (window.innerWidth > 768) {
+    new Rellax('.rellax', {
+        speed: -2,
+        center: true,
+        round: true,
+        vertical: true,
+        horizontal: false
+    });
+}
 
-## 🚀 What This Site Is About
+const squareIDs = ["sq1", "sq2", "sq3", "sq4", "sq5", "sq6", "sq7", "sq8", "sq9", "sq10", "sq11", "sq12", "sq13", "sq14", "sq15", "sq16", "sq17", "sq18", "sq19", "sq20", "sq21", "sq22", "sq23", "sq24"];
 
-This portfolio is more than a static resume. It’s a full-stack **interactive experience** designed to:
+squareIDs.forEach((id, index) => {
+    anime({
+        targets: `#${id}`,
+        translateY: [
+            { value: -20, duration: 2000 },
+            { value: 20, duration: 2000 }
+        ],
+        easing: "easeInOutSine",
+        direction: "alternate",
+        loop: true,
+        delay: index * 200
+    });
+});
+// Navbar active link logic
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.navbar-link');
+const nav = document.querySelector('nav'); // Get the navbar element once
 
-- Present real-world projects I've built across **web**, **mobile**, and **IoT**.
-- Highlight technologies I’ve used including **React**, **Jetpack Compose**, **Node.js**, **Firebase**, **C++**, and more.
-- Showcase certifications, education, and hands-on experience with companies like @iLabAfrica, Bluewave, and Render Health.
-- Allow visitors to easily **get in touch** through a sleek contact form (non-functional by design).
+window.addEventListener('scroll', () => {
+    let current = '';
+    const scrollY = window.pageYOffset;
 
----
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - nav.offsetHeight - 50; // Adjust for navbar height and a small buffer
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
 
-## 🛠️ Built With
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = sectionId;
+        }
+    });
 
-- **Tailwind CSS** – For rapid, responsive UI design.
-- **Lucide Icons** – Beautiful, consistent icons across the board.
-- **Rellax.js + Anime.js + AOS.js** – For scroll-based animations, parallax effects, and micro-interactions.
-- **Vanilla HTML, CSS, and JS** – No frameworks, just efficient and clean markup.
-- **GitHub Pages** – Deployed straight from the `main` branch.
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
+    });
+});
 
----
-
-## 📦 Features
-
-- 🔥 Fully responsive, mobile-first layout.
-- 🎨 Parallax backgrounds and dynamic visual flourishes using SVG.
-- 🧭 Smooth scrolling navigation with active section highlighting.
-- 🧾 Modular sections: About, Experience, Education, Projects, Certifications, Skills, and Contact.
-- 🌌 Designed with personality and purpose – elegant purple/blue theme vibes.
-
----
-
-## 💡 Inspiration
-
-The site reflects my mindset:  
-> *Build things that work. Make them delightful. Keep learning.*
-
-This is where I bring together what I know, what I’ve built, and what I’m passionate about — from embedded sensors to web APIs, and from terminal tools to mobile apps.
-
----
-
-## 📥 Want to Collaborate or Say Hi?
-
-You can reach me through:
-- 📧 Email: [stoniedev@gmail.com](mailto:stoniedev@gmail.com)
-- 📞 Phone: [+254729291438](tel:+254729291438)
-- 🧑‍💼 LinkedIn: [Coming Soon]
-- 🛠️ Projects & Code: [GitHub](https://github.com/winstone-were)
-
----
-
-## 🔧 Setup Instructions (Optional)
-
-Want to clone and play around locally?
-
-```bash
-git clone https://github.com/winstone-were/portofolio-winstone-were.git
-cd portofolio-winstone-were
+// Initial check for active link on page load
+window.dispatchEvent(new Event('scroll'));
