@@ -7,7 +7,7 @@ Welcome to your **Personal Portfolio Project**! This assignment is designed to h
 ## 📌 Project Management Guidelines
 
 ### ✅ Milestones
-Define major phases or deliverables of your portfolio (e.g., Landing Page, Team Profiles, Admin Panel).
+Break each milestone into manageable tasks. Link these issues to their related milestone for better tracking.
 
 ### ✅ Issues
 Break each milestone into manageable tasks. Link these issues to their related milestone for better tracking.
