@@ -1,65 +1,96 @@
-# 🧠 Amaumo Winstone Were – Portfolio
+# 🌐 Personal Portfolio Project Assignment
 
-Welcome to the source code for my personal portfolio – a digital showcase of my work, skills, and journey through software development. Whether you're here to peek at my projects, learn what tech I'm into, or just curious about the person behind the code, you're in the right place.
-
-🌐 **Live Site**: [winstone-were.github.io/portofolio-winstone-were](https://winstone-were.github.io/portofolio-winstone-were)
+Welcome to your **Personal Portfolio Project**! This assignment is designed to help you practice core GitHub and project management skills, including milestones, issues, project boards, branching, commit conventions, pull requests, and resolving merge conflicts.
 
 ---
 
-## 🚀 What This Site Is About
+## 📌 Project Management Guidelines
 
-This portfolio is more than a static resume. It’s a full-stack **interactive experience** designed to:
+### ✅ Milestones
+Define major phases or deliverables of your portfolio (e.g., Landing Page, Team Profiles, Admin Panel).
 
-- Present real-world projects I've built across **web**, **mobile**, and **IoT**.
-- Highlight technologies I’ve used including **React**, **Jetpack Compose**, **Node.js**, **Firebase**, **C++**, and more.
-- Showcase certifications, education, and hands-on experience with companies like @iLabAfrica, Bluewave, and Render Health.
-- Allow visitors to easily **get in touch** through a sleek contact form (non-functional by design).
+### ✅ Issues
+Break each milestone into manageable tasks. Link these issues to their related milestone for better tracking.
 
----
+### ✅ Project Board
+Create a GitHub project board with columns like:
+- `To Do`
+- `In Progress`
+- `Done`
 
-## 🛠️ Built With
-
-- **Tailwind CSS** – For rapid, responsive UI design.
-- **Lucide Icons** – Beautiful, consistent icons across the board.
-- **Rellax.js + Anime.js + AOS.js** – For scroll-based animations, parallax effects, and micro-interactions.
-- **Vanilla HTML, CSS, and JS** – No frameworks, just efficient and clean markup.
-- **GitHub Pages** – Deployed straight from the `main` branch.
+Assign tasks and pull requests to the appropriate columns.
 
 ---
 
-## 📦 Features
+## 🔧 Git Workflow
 
-- 🔥 Fully responsive, mobile-first layout.
-- 🎨 Parallax backgrounds and dynamic visual flourishes using SVG.
-- 🧭 Smooth scrolling navigation with active section highlighting.
-- 🧾 Modular sections: About, Experience, Education, Projects, Certifications, Skills, and Contact.
-- 🌌 Designed with personality and purpose – elegant purple/blue theme vibes.
+### 🔀 Branching
+Use feature branches for each issue. Adopt a consistent naming format such as:
+
+```
+feature/<issue-number>-short-description
+```
+
+### 💬 Commits
+Use structured, meaningful commit messages:
+
+```
+<type>(<optional scope>): <short description>
+
+<body>
+
+<footer>
+```
+
+**Commit Types: `(use at least 6 of these)`**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Formatting, white space, etc.
+- `refactor`: Code restructure (no feature or bug)
+- `perf`: Performance improvement
+- `test`: Test-related updates
+- `chore`: Non-code updates (e.g., config)
+- `build`: Build system or dependency changes
+- `ci`: Continuous integration changes
+
+**Example:**
+```
+feat(portfolio): add responsive navigation bar
+
+Added a mobile-first responsive nav using Flexbox.
+
+Closes #45
+```
 
 ---
 
-## 💡 Inspiration
+## 🔄 Pull Requests & Merge Conflicts
 
-The site reflects my mindset:  
-> *Build things that work. Make them delightful. Keep learning.*
-
-This is where I bring together what I know, what I’ve built, and what I’m passionate about — from embedded sensors to web APIs, and from terminal tools to mobile apps.
-
----
-
-## 📥 Want to Collaborate or Say Hi?
-
-You can reach me through:
-- 📧 Email: [stoniedev@gmail.com](mailto:stoniedev@gmail.com)
-- 📞 Phone: [+254729291438](tel:+254729291438)
-- 🧑‍💼 LinkedIn: [Coming Soon]
-- 🛠️ Projects & Code: [GitHub](https://github.com/winstone-were)
+- Open a PR for each feature branch.
+- Link the PR to its corresponding issue.
+- Request reviews before merging.
+- Document any merge conflict resolution in the PR or commit message.
 
 ---
 
-## 🔧 Setup Instructions (Optional)
+## 🚀 Deployment & Documentation
 
-Want to clone and play around locally?
+- Keep the `main` branch always deployable.
+- Deploy using GitHub Pages (mandatory) and any suitable platform (optional).
+- Complete the `Assignment.md` file in this repository by addressing all listed requirements. This document will be used for evaluation.
+---
 
-```bash
-git clone https://github.com/winstone-were/portofolio-winstone-were.git
-cd portofolio-winstone-were
+## 📥 Submission Checklist
+
+Before submitting your project, ensure the following:
+
+- [ ] Defined milestones for key features
+- [ ] Created and linked issues to milestones
+- [ ] Organized a GitHub project board (To Do / In Progress / Done)
+- [ ] Used structured commit messages
+- [ ] Created separate feature branches for tasks
+- [ ] Opened and merged PRs with meaningful descriptions
+- [ ] Demonstrated conflict resolution (Simulate atleast one)
+- [ ] Deployed the portfolio online
+- [ ] Completed and updated the `Assignment.md` file which will be marked and graded
